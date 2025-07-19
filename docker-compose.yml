@@ -1,15 +1,10 @@
-version: '3.8'
-
 services:
   frontend:
     build:
       context: .
       dockerfile: Dockerfile
+    image: test-frontend-app:latest
     ports:
       - "8080:80"
     container_name: test-frontend-app
     restart: unless-stopped
-
-networks:
-  default:
-    driver: bridge
