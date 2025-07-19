@@ -9,27 +9,7 @@ services:
       - "8080:80"
     container_name: test-frontend-app
     restart: unless-stopped
-    networks:
-      - app-network
-
-  # 可选：如果需要开发环境，可以添加开发服务
-  frontend-dev:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    ports:
-      - "3000:3000"
-    container_name: test-frontend-app-dev
-    volumes:
-      - .:/app
-      - /app/node_modules
-    environment:
-      - NODE_ENV=development
-    networks:
-      - app-network
-    profiles:
-      - dev
 
 networks:
-  app-network:
+  default:
     driver: bridge
