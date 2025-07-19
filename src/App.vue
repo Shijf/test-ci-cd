@@ -74,8 +74,8 @@ onMounted(() => {
   padding: 2rem;
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   text-align: center;
-  max-width: 500px;
-  width: 90%;
+  /* max-width: 500px; */
+  /* width: 90%; */
   margin: 2rem auto;
 }
 
