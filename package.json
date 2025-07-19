@@ -1,0 +1,23 @@
+{
+  "name": "test-frontend-app",
+  "version": "1.0.0",
+  "description": "A simple Vue3 app for testing CI/CD pipeline",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  },
+  "keywords": ["vue", "frontend", "test", "cicd"],
+  "author": "Test User",
+  "license": "MIT"
+}
